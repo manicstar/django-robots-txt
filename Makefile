@@ -11,4 +11,4 @@ upload:
 	python setup.py sdist upload
 
 clean:
-	rm -rf dist build *.egg-info django-webmaster-verification-*
+	rm -rf dist build *.egg-info django-robots-txt-*
