@@ -3,7 +3,7 @@ from django.test import TestCase
 from django.test.client import Client
 
 
-class RobotstxtTest(TestCase):
+class RobotsTextTest(TestCase):
     def setUp(self):
         self.client = Client()
 
@@ -24,4 +24,3 @@ class RobotstxtTest(TestCase):
             'text/plain',
             "Got %s content type for robots.txt" % r['Content-Type']
         )
-            
