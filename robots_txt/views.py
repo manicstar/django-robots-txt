@@ -8,7 +8,7 @@ class RobotsTextView(TemplateView):
     template_name = 'robots.txt'
 
     def render_to_response(self, context, **kwargs):
-        return super(TextView, self).render_to_response(
+        return super(RobotsTextView, self).render_to_response(
             context,
             content_type='text/plain',
             **kwargs
