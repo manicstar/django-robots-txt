@@ -2,7 +2,7 @@
 README
 ======
 
-This is a simple application to create a ``robots.txt`` for django. It has no models at all and you're supposed to edit a template to update the ``robots.txt`` file. I just got tired of copy & pasting this into my apps.
+This is a simple application to create a ``robots.txt`` for django. It has no models at all and you're supposed to edit a template to update the ``robots.txt`` file. I just got tired of copy & pasting this into my projects.
 
 See the `robots page <http://www.robotstxt.org/>`_ for details what the file should look like.
 
