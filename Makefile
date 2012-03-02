@@ -1,5 +1,5 @@
 test:
-	make -C django-robots-txt-test-project test
+	make -C tests test
 
 install:
 	python setup.py install

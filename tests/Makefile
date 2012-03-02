@@ -3,4 +3,4 @@ db.sqlite:
 	
 .PHONY: test
 test: db.sqlite
-	PYTHONPATH=.. python manage.py test test_app
+	PYTHONPATH=.. python manage.py test robots_txt

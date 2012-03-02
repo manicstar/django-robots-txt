@@ -8,8 +8,8 @@ DATABASES = {
     }
 }
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'test_project.urls'
 
 INSTALLED_APPS = (
-    'test_app',
+    'robots_txt',
 )
