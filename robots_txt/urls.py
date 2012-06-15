@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import patterns, include, url
 
-from robotstxt.views import RobotsTextView
+from robots_txt.views import RobotsTextView
 
 urlpatterns = patterns('',
     url(
