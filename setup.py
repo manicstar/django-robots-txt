@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name = "django-robots-txt",
-    version = "0.2",
+    version = "0.3",
     author = "Nicolas Kuttler",
     author_email = "pypi@nicolaskuttler.com",
     description = "Simple robots.txt app for django",
