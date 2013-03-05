@@ -6,6 +6,9 @@ This is a simple application to create a ``robots.txt`` file for django. It has 
 
 See the `robots page <http://www.robotstxt.org/>`_ for details what the file should look like.
 
+.. image:: https://api.travis-ci.org/nkuttler/django-robots-txt.png
+  :target: https://travis-ci.org/nkuttler/django-robots-txt
+
 Usage
 -----
 
