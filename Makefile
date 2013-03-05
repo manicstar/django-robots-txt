@@ -1,5 +1,5 @@
 test:
-	make -C tests test
+	python quicktest.py robots_txt
 
 install:
 	python setup.py install

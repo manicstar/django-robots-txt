@@ -46,7 +46,8 @@ You can add ``robots_txt`` to your INSTALLED_APPS in settings.py if you don't wa
 
 Changes
 -------
+0.4:
+- Refactor tests
 
-0.3
-
-* Bugfix for included urlconfig
+0.3:
+- Bugfix for included urlconfig
