@@ -1,21 +1,19 @@
 language: python
 # Python releases to test
 python:
-  - 2.5
   - 2.6
   - 2.7
   - 3.2
 # Django releases
 env:
-  - DJANGO_VERSION=Django==1.4.5
-  - DJANGO_VERSION=Django==1.5
+  - DJANGO_VERSION=Django==1.4.10
+  - DJANGO_VERSION=Django==1.5.5
+  - DJANGO_VERSION=Django==1.6.1
 # Exclude some Django releases depending on Python version
 matrix:
   exclude:
     - python: 3.2
-      env: DJANGO_VERSION=Django==1.4.5
-    - python: 2.5
-      env: DJANGO_VERSION=Django==1.5
+      env: DJANGO_VERSION=Django==1.4.10
 install:
   - if [[ $TRAVIS_PYTHON_VERSION < '2.7' ]]; then pip install -q --use-mirrors argparse; fi
   - pip install -q --use-mirrors $DJANGO_VERSION

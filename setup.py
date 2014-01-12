@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name = "django-robots-txt",
-    version = "0.3",
+    version = "0.4",
     author = "Nicolas Kuttler",
     author_email = "pypi@nicolaskuttler.com",
     description = "Simple robots.txt app for django",
@@ -24,7 +24,7 @@ setup(
         "Framework :: Django",
     ],
     install_requires = [
-        "Django >= 1.3",
+        "Django >= 1.4",
     ],
     zip_safe = True,
 )

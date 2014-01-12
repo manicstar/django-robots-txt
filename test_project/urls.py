@@ -1,4 +1,5 @@
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls import patterns
+from django.conf.urls import url
 
 from robots_txt.views import RobotsTextView
 

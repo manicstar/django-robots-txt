@@ -51,6 +51,7 @@ Changes
 -------
 0.4:
 - Refactor tests
+- Updates for Django 1.6
 
 0.3:
 - Bugfix for included urlconfig
