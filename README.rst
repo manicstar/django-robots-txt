@@ -49,9 +49,19 @@ You can add ``robots_txt`` to your INSTALLED_APPS in settings.py if you don't wa
 
 Changes
 -------
-0.4:
+
+0.5
+~~~
+
+- Update for Django 1.8+
+
+0.4
+~~~
+
 - Refactor tests
 - Updates for Django 1.6
 
-0.3:
+0.3
+~~~
+
 - Bugfix for included urlconfig

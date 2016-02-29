@@ -7,7 +7,9 @@ import os
 import sys
 import argparse
 
+from django import setup
 from django.conf import settings
+from django.test.runner import DiscoverRunner
 
 
 class QuickDjangoTest(object):
@@ -38,8 +40,8 @@ class QuickDjangoTest(object):
         Fire up the Django test suite developed for version 1.2
         """
         settings.configure(
-            DEBUG = True,
-            DATABASES = {
+            DEBUG=True,
+            DATABASES={
                 'default': {
                     'ENGINE': 'django.db.backends.sqlite3',
                     'NAME': os.path.join(self.DIRNAME, 'database.db'),
@@ -49,16 +51,16 @@ class QuickDjangoTest(object):
                     'PORT': '',
                 }
             },
-            INSTALLED_APPS = self.INSTALLED_APPS + tuple(self.apps),
-            ROOT_URLCONF = 'test_project.urls',
-            TEMPLATE_DIRS = (
+            INSTALLED_APPS=self.INSTALLED_APPS + tuple(self.apps),
+            ROOT_URLCONF='test_project.urls',
+            TEMPLATE_DIRS=(
                 './test_project/templates/',
             ),
         )
-        from django.test.simple import DjangoTestSuiteRunner
-        failures = DjangoTestSuiteRunner().run_tests(self.apps, verbosity=1)
-        if failures:
-            sys.exit(failures)
+
+        # Django 1.8
+        setup()
+        DiscoverRunner().run_tests(self.apps, verbosity=1)
 
 
 if __name__ == '__main__':
