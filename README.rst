@@ -54,6 +54,7 @@ Changes
 ~~~
 
 - Update for Django 1.8+
+- Update test builds
 
 0.4
 ~~~
