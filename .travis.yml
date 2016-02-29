@@ -1,4 +1,5 @@
 language: python
+sudo: False
 # Python releases to test
 python:
   - 2.7
